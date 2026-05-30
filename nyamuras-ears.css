@@ -1,0 +1,25 @@
+.base__5e434:has(#guild-list-unread-dms > *)::after {
+    content: "";
+    width: 200px;
+    height: 203px;
+    transform: scale(0.3);
+    top: -58px; /*for custom themes, change the values*/
+    left: -64px; 
+    position: absolute;
+    image-rendering: pixelated;
+    pointer-events: none;
+    background-image: url("https://raw.githubusercontent.com/daswsa/nyamuras-ears-discord/main/nyamuras-ears-animation.gif");
+}
+ 
+.base__5e434:not(:has(#guild-list-unread-dms > *))::after {
+    content: "";
+    width: 200px;
+    height: 203px;
+    transform: scale(0.3);
+    top: -58px; /*for custom themes, change the values*/
+    left: -64px; 
+    position: absolute;
+    image-rendering: pixelated;
+    pointer-events: none;
+    background-image: url("https://raw.githubusercontent.com/daswsa/nyamuras-ears-discord/main/nyamuras-ears.png");
+}
